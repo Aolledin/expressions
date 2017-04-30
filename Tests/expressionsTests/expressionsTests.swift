@@ -9,6 +9,8 @@ class expressionsTests: XCTestCase {
         XCTAssert (toNumber (51).equals (expected), "toNumber is incorrect")
     }
 
+
+
     static var allTests : [(String, (expressionsTests) -> () throws -> Void)] {
         return [
             ("testToNumber", testToNumber),
