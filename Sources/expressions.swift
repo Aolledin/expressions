@@ -49,121 +49,121 @@ func toNumber (_ n : Int) -> Term {
 
 //Généré avec un petit programme
 //result est uniquement le dernier chiffre du résultat de l'addidion.
-func add_chiffres( lhs: Term,  rhs: Term, result : Term, retenue : Term) -> Goal{
+func addChiffres( lhs: Term,  rhs: Term, result : Term, retenue : Term) -> Goal{
 
   return
-    (lhs === d0 && lhs === d1 && result === d1 && retenue === d0) ||
-    (lhs === d0 && lhs === d2 && result === d2 && retenue === d0) ||
-    (lhs === d0 && lhs === d3 && result === d3 && retenue === d0) ||
-    (lhs === d0 && lhs === d4 && result === d4 && retenue === d0) ||
-    (lhs === d0 && lhs === d5 && result === d5 && retenue === d0) ||
-    (lhs === d0 && lhs === d0 && result === d0 && retenue === d0) ||
-    (lhs === d0 && lhs === d6 && result === d6 && retenue === d0) ||
-    (lhs === d0 && lhs === d7 && result === d7 && retenue === d0) ||
-    (lhs === d0 && lhs === d8 && result === d8 && retenue === d0) ||
-    (lhs === d0 && lhs === d9 && result === d9 && retenue === d0) ||
+    (lhs === d0 && rhs === d1 && result === d1 && retenue === d0) ||
+    (lhs === d0 && rhs === d2 && result === d2 && retenue === d0) ||
+    (lhs === d0 && rhs === d3 && result === d3 && retenue === d0) ||
+    (lhs === d0 && rhs === d4 && result === d4 && retenue === d0) ||
+    (lhs === d0 && rhs === d5 && result === d5 && retenue === d0) ||
+    (lhs === d0 && rhs === d0 && result === d0 && retenue === d0) ||
+    (lhs === d0 && rhs === d6 && result === d6 && retenue === d0) ||
+    (lhs === d0 && rhs === d7 && result === d7 && retenue === d0) ||
+    (lhs === d0 && rhs === d8 && result === d8 && retenue === d0) ||
+    (lhs === d0 && rhs === d9 && result === d9 && retenue === d0) ||
 
-    (lhs === d1 && lhs === d0 && result === d1 && retenue === d0) ||
-    (lhs === d1 && lhs === d1 && result === d2 && retenue === d0) ||
-    (lhs === d1 && lhs === d2 && result === d3 && retenue === d0) ||
-    (lhs === d1 && lhs === d3 && result === d4 && retenue === d0) ||
-    (lhs === d1 && lhs === d4 && result === d5 && retenue === d0) ||
-    (lhs === d1 && lhs === d5 && result === d6 && retenue === d0) ||
-    (lhs === d1 && lhs === d6 && result === d7 && retenue === d0) ||
-    (lhs === d1 && lhs === d7 && result === d8 && retenue === d0) ||
-    (lhs === d1 && lhs === d8 && result === d9 && retenue === d0) ||
-    (lhs === d1 && lhs === d9 && result === d0 && retenue === d1) ||
+    (lhs === d1 && rhs === d0 && result === d1 && retenue === d0) ||
+    (lhs === d1 && rhs === d1 && result === d2 && retenue === d0) ||
+    (lhs === d1 && rhs === d2 && result === d3 && retenue === d0) ||
+    (lhs === d1 && rhs === d3 && result === d4 && retenue === d0) ||
+    (lhs === d1 && rhs === d4 && result === d5 && retenue === d0) ||
+    (lhs === d1 && rhs === d5 && result === d6 && retenue === d0) ||
+    (lhs === d1 && rhs === d6 && result === d7 && retenue === d0) ||
+    (lhs === d1 && rhs === d7 && result === d8 && retenue === d0) ||
+    (lhs === d1 && rhs === d8 && result === d9 && retenue === d0) ||
+    (lhs === d1 && rhs === d9 && result === d0 && retenue === d1) ||
 
-    (lhs === d2 && lhs === d0 && result === d2 && retenue === d0) ||
-    (lhs === d2 && lhs === d1 && result === d3 && retenue === d0) ||
-    (lhs === d2 && lhs === d2 && result === d4 && retenue === d0) ||
-    (lhs === d2 && lhs === d3 && result === d5 && retenue === d0) ||
-    (lhs === d2 && lhs === d4 && result === d6 && retenue === d0) ||
-    (lhs === d2 && lhs === d5 && result === d7 && retenue === d0) ||
-    (lhs === d2 && lhs === d6 && result === d8 && retenue === d0) ||
-    (lhs === d2 && lhs === d7 && result === d9 && retenue === d0) ||
-    (lhs === d2 && lhs === d8 && result === d0 && retenue === d1) ||
-    (lhs === d2 && lhs === d9 && result === d1 && retenue === d1) ||
+    (lhs === d2 && rhs === d0 && result === d2 && retenue === d0) ||
+    (lhs === d2 && rhs === d1 && result === d3 && retenue === d0) ||
+    (lhs === d2 && rhs === d2 && result === d4 && retenue === d0) ||
+    (lhs === d2 && rhs === d3 && result === d5 && retenue === d0) ||
+    (lhs === d2 && rhs === d4 && result === d6 && retenue === d0) ||
+    (lhs === d2 && rhs === d5 && result === d7 && retenue === d0) ||
+    (lhs === d2 && rhs === d6 && result === d8 && retenue === d0) ||
+    (lhs === d2 && rhs === d7 && result === d9 && retenue === d0) ||
+    (lhs === d2 && rhs === d8 && result === d0 && retenue === d1) ||
+    (lhs === d2 && rhs === d9 && result === d1 && retenue === d1) ||
 
-    (lhs === d3 && lhs === d0 && result === d3 && retenue === d0) ||
-    (lhs === d3 && lhs === d1 && result === d4 && retenue === d0) ||
-    (lhs === d3 && lhs === d2 && result === d5 && retenue === d0) ||
-    (lhs === d3 && lhs === d3 && result === d6 && retenue === d0) ||
-    (lhs === d3 && lhs === d4 && result === d7 && retenue === d0) ||
-    (lhs === d3 && lhs === d5 && result === d8 && retenue === d0) ||
-    (lhs === d3 && lhs === d6 && result === d9 && retenue === d0) ||
-    (lhs === d3 && lhs === d7 && result === d0 && retenue === d1) ||
-    (lhs === d3 && lhs === d8 && result === d1 && retenue === d1) ||
-    (lhs === d3 && lhs === d9 && result === d2 && retenue === d1) ||
+    (lhs === d3 && rhs === d0 && result === d3 && retenue === d0) ||
+    (lhs === d3 && rhs === d1 && result === d4 && retenue === d0) ||
+    (lhs === d3 && rhs === d2 && result === d5 && retenue === d0) ||
+    (lhs === d3 && rhs === d3 && result === d6 && retenue === d0) ||
+    (lhs === d3 && rhs === d4 && result === d7 && retenue === d0) ||
+    (lhs === d3 && rhs === d5 && result === d8 && retenue === d0) ||
+    (lhs === d3 && rhs === d6 && result === d9 && retenue === d0) ||
+    (lhs === d3 && rhs === d7 && result === d0 && retenue === d1) ||
+    (lhs === d3 && rhs === d8 && result === d1 && retenue === d1) ||
+    (lhs === d3 && rhs === d9 && result === d2 && retenue === d1) ||
 
-    (lhs === d4 && lhs === d0 && result === d4 && retenue === d0) ||
-    (lhs === d4 && lhs === d1 && result === d5 && retenue === d0) ||
-    (lhs === d4 && lhs === d2 && result === d6 && retenue === d0) ||
-    (lhs === d4 && lhs === d3 && result === d7 && retenue === d0) ||
-    (lhs === d4 && lhs === d4 && result === d8 && retenue === d0) ||
-    (lhs === d4 && lhs === d5 && result === d9 && retenue === d0) ||
-    (lhs === d4 && lhs === d6 && result === d0 && retenue === d1) ||
-    (lhs === d4 && lhs === d7 && result === d1 && retenue === d1) ||
-    (lhs === d4 && lhs === d8 && result === d2 && retenue === d1) ||
-    (lhs === d4 && lhs === d9 && result === d3 && retenue === d1) ||
+    (lhs === d4 && rhs === d0 && result === d4 && retenue === d0) ||
+    (lhs === d4 && rhs === d1 && result === d5 && retenue === d0) ||
+    (lhs === d4 && rhs === d2 && result === d6 && retenue === d0) ||
+    (lhs === d4 && rhs === d3 && result === d7 && retenue === d0) ||
+    (lhs === d4 && rhs === d4 && result === d8 && retenue === d0) ||
+    (lhs === d4 && rhs === d5 && result === d9 && retenue === d0) ||
+    (lhs === d4 && rhs === d6 && result === d0 && retenue === d1) ||
+    (lhs === d4 && rhs === d7 && result === d1 && retenue === d1) ||
+    (lhs === d4 && rhs === d8 && result === d2 && retenue === d1) ||
+    (lhs === d4 && rhs === d9 && result === d3 && retenue === d1) ||
 
-    (lhs === d5 && lhs === d0 && result === d5 && retenue === d0) ||
-    (lhs === d5 && lhs === d1 && result === d6 && retenue === d0) ||
-    (lhs === d5 && lhs === d2 && result === d7 && retenue === d0) ||
-    (lhs === d5 && lhs === d3 && result === d8 && retenue === d0) ||
-    (lhs === d5 && lhs === d4 && result === d9 && retenue === d0) ||
-    (lhs === d5 && lhs === d5 && result === d0 && retenue === d1) ||
-    (lhs === d5 && lhs === d6 && result === d1 && retenue === d1) ||
-    (lhs === d5 && lhs === d7 && result === d2 && retenue === d1) ||
-    (lhs === d5 && lhs === d8 && result === d3 && retenue === d1) ||
-    (lhs === d5 && lhs === d9 && result === d4 && retenue === d1) ||
+    (lhs === d5 && rhs === d0 && result === d5 && retenue === d0) ||
+    (lhs === d5 && rhs === d1 && result === d6 && retenue === d0) ||
+    (lhs === d5 && rhs === d2 && result === d7 && retenue === d0) ||
+    (lhs === d5 && rhs === d3 && result === d8 && retenue === d0) ||
+    (lhs === d5 && rhs === d4 && result === d9 && retenue === d0) ||
+    (lhs === d5 && rhs === d5 && result === d0 && retenue === d1) ||
+    (lhs === d5 && rhs === d6 && result === d1 && retenue === d1) ||
+    (lhs === d5 && rhs === d7 && result === d2 && retenue === d1) ||
+    (lhs === d5 && rhs === d8 && result === d3 && retenue === d1) ||
+    (lhs === d5 && rhs === d9 && result === d4 && retenue === d1) ||
 
-    (lhs === d6 && lhs === d0 && result === d6 && retenue === d0) ||
-    (lhs === d6 && lhs === d1 && result === d7 && retenue === d0) ||
-    (lhs === d6 && lhs === d2 && result === d8 && retenue === d0) ||
-    (lhs === d6 && lhs === d3 && result === d9 && retenue === d0) ||
-    (lhs === d6 && lhs === d4 && result === d0 && retenue === d1) ||
-    (lhs === d6 && lhs === d5 && result === d1 && retenue === d1) ||
-    (lhs === d6 && lhs === d6 && result === d2 && retenue === d1) ||
-    (lhs === d6 && lhs === d7 && result === d3 && retenue === d1) ||
-    (lhs === d6 && lhs === d8 && result === d4 && retenue === d1) ||
-    (lhs === d6 && lhs === d9 && result === d5 && retenue === d1) ||
+    (lhs === d6 && rhs === d0 && result === d6 && retenue === d0) ||
+    (lhs === d6 && rhs === d1 && result === d7 && retenue === d0) ||
+    (lhs === d6 && rhs === d2 && result === d8 && retenue === d0) ||
+    (lhs === d6 && rhs === d3 && result === d9 && retenue === d0) ||
+    (lhs === d6 && rhs === d4 && result === d0 && retenue === d1) ||
+    (lhs === d6 && rhs === d5 && result === d1 && retenue === d1) ||
+    (lhs === d6 && rhs === d6 && result === d2 && retenue === d1) ||
+    (lhs === d6 && rhs === d7 && result === d3 && retenue === d1) ||
+    (lhs === d6 && rhs === d8 && result === d4 && retenue === d1) ||
+    (lhs === d6 && rhs === d9 && result === d5 && retenue === d1) ||
 
-    (lhs === d7 && lhs === d0 && result === d7 && retenue === d0) ||
-    (lhs === d7 && lhs === d1 && result === d8 && retenue === d0) ||
-    (lhs === d7 && lhs === d2 && result === d9 && retenue === d0) ||
-    (lhs === d7 && lhs === d3 && result === d0 && retenue === d1) ||
-    (lhs === d7 && lhs === d4 && result === d1 && retenue === d1) ||
-    (lhs === d7 && lhs === d5 && result === d2 && retenue === d1) ||
-    (lhs === d7 && lhs === d6 && result === d3 && retenue === d1) ||
-    (lhs === d7 && lhs === d7 && result === d4 && retenue === d1) ||
-    (lhs === d7 && lhs === d8 && result === d5 && retenue === d1) ||
-    (lhs === d7 && lhs === d9 && result === d6 && retenue === d1) ||
+    (lhs === d7 && rhs === d0 && result === d7 && retenue === d0) ||
+    (lhs === d7 && rhs === d1 && result === d8 && retenue === d0) ||
+    (lhs === d7 && rhs === d2 && result === d9 && retenue === d0) ||
+    (lhs === d7 && rhs === d3 && result === d0 && retenue === d1) ||
+    (lhs === d7 && rhs === d4 && result === d1 && retenue === d1) ||
+    (lhs === d7 && rhs === d5 && result === d2 && retenue === d1) ||
+    (lhs === d7 && rhs === d6 && result === d3 && retenue === d1) ||
+    (lhs === d7 && rhs === d7 && result === d4 && retenue === d1) ||
+    (lhs === d7 && rhs === d8 && result === d5 && retenue === d1) ||
+    (lhs === d7 && rhs === d9 && result === d6 && retenue === d1) ||
 
-    (lhs === d8 && lhs === d0 && result === d8 && retenue === d0) ||
-    (lhs === d8 && lhs === d1 && result === d9 && retenue === d0) ||
-    (lhs === d8 && lhs === d2 && result === d0 && retenue === d1) ||
-    (lhs === d8 && lhs === d3 && result === d1 && retenue === d1) ||
-    (lhs === d8 && lhs === d4 && result === d2 && retenue === d1) ||
-    (lhs === d8 && lhs === d5 && result === d3 && retenue === d1) ||
-    (lhs === d8 && lhs === d6 && result === d4 && retenue === d1) ||
-    (lhs === d8 && lhs === d7 && result === d5 && retenue === d1) ||
-    (lhs === d8 && lhs === d8 && result === d6 && retenue === d1) ||
-    (lhs === d8 && lhs === d9 && result === d7 && retenue === d1) ||
+    (lhs === d8 && rhs === d0 && result === d8 && retenue === d0) ||
+    (lhs === d8 && rhs === d1 && result === d9 && retenue === d0) ||
+    (lhs === d8 && rhs === d2 && result === d0 && retenue === d1) ||
+    (lhs === d8 && rhs === d3 && result === d1 && retenue === d1) ||
+    (lhs === d8 && rhs === d4 && result === d2 && retenue === d1) ||
+    (lhs === d8 && rhs === d5 && result === d3 && retenue === d1) ||
+    (lhs === d8 && rhs === d6 && result === d4 && retenue === d1) ||
+    (lhs === d8 && rhs === d7 && result === d5 && retenue === d1) ||
+    (lhs === d8 && rhs === d8 && result === d6 && retenue === d1) ||
+    (lhs === d8 && rhs === d9 && result === d7 && retenue === d1) ||
 
-    (lhs === d9 && lhs === d0 && result === d9 && retenue === d0) ||
-    (lhs === d9 && lhs === d1 && result === d0 && retenue === d1) ||
-    (lhs === d9 && lhs === d2 && result === d1 && retenue === d1) ||
-    (lhs === d9 && lhs === d3 && result === d2 && retenue === d1) ||
-    (lhs === d9 && lhs === d4 && result === d3 && retenue === d1) ||
-    (lhs === d9 && lhs === d5 && result === d4 && retenue === d1) ||
-    (lhs === d9 && lhs === d6 && result === d5 && retenue === d1) ||
-    (lhs === d9 && lhs === d7 && result === d6 && retenue === d1) ||
-    (lhs === d9 && lhs === d8 && result === d7 && retenue === d1) ||
-    (lhs === d9 && lhs === d9 && result === d8 && retenue === d1)
+    (lhs === d9 && rhs === d0 && result === d9 && retenue === d0) ||
+    (lhs === d9 && rhs === d1 && result === d0 && retenue === d1) ||
+    (lhs === d9 && rhs === d2 && result === d1 && retenue === d1) ||
+    (lhs === d9 && rhs === d3 && result === d2 && retenue === d1) ||
+    (lhs === d9 && rhs === d4 && result === d3 && retenue === d1) ||
+    (lhs === d9 && rhs === d5 && result === d4 && retenue === d1) ||
+    (lhs === d9 && rhs === d6 && result === d5 && retenue === d1) ||
+    (lhs === d9 && rhs === d7 && result === d6 && retenue === d1) ||
+    (lhs === d9 && rhs === d8 && result === d7 && retenue === d1) ||
+    (lhs === d9 && rhs === d9 && result === d8 && retenue === d1)
 }
 
-
+//Aide pour la fonction reverse
 func reverseAcc(list: Term, acc: Term, reversed: Term) -> Goal{
   return (list === List.empty && reversed === acc) ||
     freshn{ t in
@@ -184,18 +184,38 @@ func reverse(list: Term, reversed: Term) -> Goal {
 // Arithmetic:
 
 func add (_ lhs: Term, _ rhs: Term) -> Map {
+      return [
+        "op"  : "add",
+        "lhs" : lhs,
+        "rhs" : rhs,
+    ]
     assert (false)
 }
 
 func subtract (_ lhs: Term, _ rhs: Term) -> Map {
+      return [
+        "op"  : "substract",
+        "lhs" : lhs,
+        "rhs" : rhs,
+    ]
     assert (false)
 }
 
 func multiply (_ lhs: Term, _ rhs: Term) -> Map {
+    return [
+      "op"  : "multiply",
+      "lhs" : lhs,
+      "rhs" : rhs,
+    ]
     assert (false)
 }
 
 func divide (_ lhs: Term, _ rhs: Term) -> Map {
+      return [
+      "op"  : "divide",
+      "lhs" : lhs,
+      "rhs" : rhs,
+    ]
     assert (false)
 }
 
@@ -205,44 +225,106 @@ let t = Value (true)
 let f = Value (false)
 
 func not (_ of: Term) -> Map {
+
+      return [
+      "op"  : "not",
+      "term" : of,
+    ]
+
     assert (false)
 }
 
 func and (_ lhs: Term, _ rhs: Term) -> Map {
+      return [
+      "op"  : "and",
+      "lhs" : lhs,
+      "rhs" : rhs,
+    ]
+
     assert (false)
 }
 
 func or (_ lhs: Term, _ rhs: Term) -> Map {
+      return [
+      "op"  : "or",
+      "lhs" : lhs,
+      "rhs" : rhs,
+    ]
+
     assert (false)
 }
 
 func implies (_ lhs: Term, _ rhs: Term) -> Map {
+
+    return [
+        "op"  : "implies",
+        "lhs" : lhs,
+        "rhs" : rhs,
+    ]
     assert (false)
 }
 
 // Comparisons:
 
 func lessthan (_ lhs: Term, _ rhs: Term) -> Map {
+
+    return [
+        "op"  : "lt",
+        "lhs" : lhs,
+        "rhs" : rhs,
+    ]
     assert (false)
 }
 
-func lessequal (_ lhs: Term, _ rhs: Term) -> Map {
+func lessequal (_ lhs: Term, _ rhs: Term) -> Map
+
+    return [
+        "op"  : "le",
+        "lhs" : lhs,
+        "rhs" : rhs,
+    ]
+
     assert (false)
 }
 
 func greaterthan (_ lhs: Term, _ rhs: Term) -> Map {
+
+      return [
+          "op"  : "gt",
+          "lhs" : lhs,
+          "rhs" : rhs,
+      ]
     assert (false)
 }
 
 func greaterequal (_ lhs: Term, _ rhs: Term) -> Map {
+
+      return [
+          "op"  : "ge",
+          "lhs" : lhs,
+          "rhs" : rhs,
+      ]
     assert (false)
 }
 
 func equal (_ lhs: Term, _ rhs: Term) -> Map {
+
+      return [
+          "op"  : "eq",
+          "lhs" : lhs,
+          "rhs" : rhs,
+      ]
     assert (false)
 }
 
 func notequal (_ lhs: Term, _ rhs: Term) -> Map {
+
+      return [
+          "op"  : "ne",
+          "lhs" : lhs,
+          "rhs" : rhs,
+      ]
+
     assert (false)
 }
 
