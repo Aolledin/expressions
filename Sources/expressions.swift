@@ -18,8 +18,12 @@ let d8 = Value (8)
 let d9 = Value (9)
 
 //
-//
-//
+//------------------
+//empty in nombres
+
+//a in chiffre, n in nomnbre
+//-----------------------
+//(a, n) in nombre
 
 func toNumber (_ n : Int) -> Term {
     var result = List.empty
@@ -303,6 +307,11 @@ func reverse(list: Term, reversed: Term) -> Goal {
 
 // Arithmetic:
 
+//l in nombre, r in nombre
+//-----------------------
+//l+r in nombre
+
+
 func add (_ lhs: Term, _ rhs: Term) -> Map {
       return [
         "op"  : Value("add"),
@@ -310,6 +319,10 @@ func add (_ lhs: Term, _ rhs: Term) -> Map {
         "rhs" : rhs,
     ]
 }
+
+//l in nombre, r in nombre
+//-----------------------
+//l-r in nombre
 
 func subtract (_ lhs: Term, _ rhs: Term) -> Map {
       return [
@@ -319,6 +332,10 @@ func subtract (_ lhs: Term, _ rhs: Term) -> Map {
     ]
 }
 
+//l in nombre, r in nombre
+//-----------------------
+//l*r in nombre
+
 func multiply (_ lhs: Term, _ rhs: Term) -> Map {
     return [
       "op"  : Value("multiply"),
@@ -326,6 +343,10 @@ func multiply (_ lhs: Term, _ rhs: Term) -> Map {
       "rhs" : rhs,
     ]
 }
+
+//l in nombre, r in nombre
+//-----------------------
+//l/r in nombre
 
 func divide (_ lhs: Term, _ rhs: Term) -> Map {
       return [
@@ -337,8 +358,21 @@ func divide (_ lhs: Term, _ rhs: Term) -> Map {
 
 // Booleans:
 
+//
+//-----------------------
+//True in Bool
+
+//
+//-----------------------
+//False in Bool
+
+
 let t = Value (true)
 let f = Value (false)
+
+//a in Bool
+//-----------------------
+//not a in Bool
 
 func not (_ of: Term) -> Map {
 
@@ -349,6 +383,10 @@ func not (_ of: Term) -> Map {
 
 }
 
+//l in Bool, r in Bool
+//-----------------------
+//l and r in Bool
+
 func and (_ lhs: Term, _ rhs: Term) -> Map {
       return [
       "op"  : Value("and"),
@@ -358,6 +396,10 @@ func and (_ lhs: Term, _ rhs: Term) -> Map {
 
 }
 
+//l in Bool, r in Bool
+//-----------------------
+//l or r in Bool
+
 func or (_ lhs: Term, _ rhs: Term) -> Map {
       return [
       "op"  : Value("or"),
@@ -366,6 +408,10 @@ func or (_ lhs: Term, _ rhs: Term) -> Map {
     ]
 
 }
+
+//l in Bool, r in Bool
+//-----------------------
+//l implies r in Bool
 
 func implies (_ lhs: Term, _ rhs: Term) -> Map {
 
@@ -378,6 +424,11 @@ func implies (_ lhs: Term, _ rhs: Term) -> Map {
 
 // Comparisons:
 
+//l in Nombre, r in Nombre
+//-----------------------
+//l < r in Bool
+
+
 func lessthan (_ lhs: Term, _ rhs: Term) -> Map {
 
     return [
@@ -386,6 +437,10 @@ func lessthan (_ lhs: Term, _ rhs: Term) -> Map {
         "rhs" : rhs,
     ]
 }
+
+//l in Nombre, r in Nombre
+//-----------------------
+//l <= r in Bool
 
 func lessequal (_ lhs: Term, _ rhs: Term) -> Map{
 
@@ -397,6 +452,10 @@ func lessequal (_ lhs: Term, _ rhs: Term) -> Map{
 
 }
 
+//l in Nombre, r in Nombre
+//-----------------------
+//l > r in Bool
+
 func greaterthan (_ lhs: Term, _ rhs: Term) -> Map {
 
       return [
@@ -405,6 +464,10 @@ func greaterthan (_ lhs: Term, _ rhs: Term) -> Map {
           "rhs" : rhs,
       ]
 }
+
+//l in Nombre, r in Nombre
+//-----------------------
+//l >= r in Bool
 
 func greaterequal (_ lhs: Term, _ rhs: Term) -> Map {
 
@@ -415,6 +478,11 @@ func greaterequal (_ lhs: Term, _ rhs: Term) -> Map {
       ]
 }
 
+//l in Nombre, r in Nombre
+//-----------------------
+//l = r in Bool
+
+
 func equal (_ lhs: Term, _ rhs: Term) -> Map {
 
       return [
@@ -423,6 +491,10 @@ func equal (_ lhs: Term, _ rhs: Term) -> Map {
           "rhs" : rhs,
       ]
 }
+
+//l in Nombre, r in Nombre
+//-----------------------
+//l != r in Bool
 
 func notequal (_ lhs: Term, _ rhs: Term) -> Map {
 
